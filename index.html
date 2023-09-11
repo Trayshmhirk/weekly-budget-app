@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Weekly Project APP</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">My Weekly Budget APP</h1>
+        </header>
+        <section class="main-content">
+            <div class="row">
+                <div class="col ">
+                    <div class="content primary">
+                        <h2 class="text-center">Add your Expenses here...</h2>
+                            <form id="add-expense" action="#">
+                                <div class="form-group my-3">
+                                    <label for="expense">Name:</label>
+                                    <input type="text" class="form-control mt-2" id="expense" placeholder="Eg. Transportation">
+                                </div>
+                                <div class="form-group my-3">
+                                    <label for="amount">Amount:</label>
+                                    <input type="text" class="form-control mt-2" id="amount" placeholder="Eg. 20">
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Add</button>
+                            </form>
+                        
+                    </div> <!--.content-->
+                </div> <!--.col-->
+
+                <div class="col">
+                    <div class="content secondary">
+                        
+                        <h2 class="text-center">List</h2>
+
+                        <div id="expenses">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="budget" class="budget">
+                            <div class="alert alert-primary">
+                                <p>Budget: $<span id="total"></span> </p>
+                            </div>
+                            <div class="restante alert alert-success">
+                                <p>Left: $<span id="left"></span></p>
+                            </div>
+                        </div> <!--.budget-->
+                    </div> <!--.content-->
+                </div><!--.col-->
+            </div> <!--.row-->
+        </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
